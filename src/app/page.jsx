@@ -1,5 +1,6 @@
+"use client";
 import Image from "next/image";
-import useQueryClient from "@tanstack/react-query";
+import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 export default function Home() {
   const fetchMovies = async () => {
@@ -11,7 +12,7 @@ export default function Home() {
   };
 
   // Access the client
-  const queryClient = useQueryClient();
+  // const queryClient = useQueryClient();
 
   const { data, error, isLoading, isError } = useQuery({
     queryKey: ["movies"],
