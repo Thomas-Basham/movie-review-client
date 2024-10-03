@@ -1,6 +1,8 @@
 import localFont from "next/font/local";
 import "./globals.css";
 
+import { Providers } from "@/providers";
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -25,7 +27,10 @@ export default function RootLayout({ children }) {
       >
         <header className="my-10 text-center">Movie Reviews</header>
 
-        <main className="min-h-screen">{children}</main>
+        <main className="min-h-screen">
+          <Providers>{children}</Providers>
+        </main>
+
         <footer className="my-10 text-center">
           &copy; Codex January 2024 Cohort
         </footer>
