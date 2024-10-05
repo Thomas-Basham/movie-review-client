@@ -18,6 +18,8 @@ export default function Movies() {
   const { data, error, isLoading, isError } = useQuery({
     queryKey: ["movies"],
     queryFn: fetchMovies,
+    staleTime: 5 * 60 * 1000, // Data is fresh for 5 minutes
+    cacheTime: 10 * 60 * 1000, // Data stays in the cache for 10 minutes
   });
 
   if (isLoading)
