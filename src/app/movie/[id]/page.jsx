@@ -1,7 +1,3 @@
-"use client";
-import axios from "axios";
-import { useQuery } from "@tanstack/react-query";
-import Image from "next/image";
 import Movie from "@/components/Movie";
 import Reviews from "@/components/Reviews";
 export default function Page({ params }) {
