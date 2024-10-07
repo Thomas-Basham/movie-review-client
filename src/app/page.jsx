@@ -29,7 +29,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center h-screen px-6 text-center">
         <h1 className="text-5xl font-extrabold tracking-tight drop-shadow-lg">
-          Welcome to <span className="text-yellow-400">Movie Reviews</span>
+          Welcome to <span className="text-yellow-400">Movie Reviewer</span>
         </h1>
         <p className="max-w-2xl mt-4 text-xl leading-relaxed drop-shadow-md">
           Your go-to spot for movie reviews, recommendations, and ratings. Let
