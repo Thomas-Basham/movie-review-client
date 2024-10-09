@@ -26,7 +26,7 @@ Welcome to the **Codex Jan2024 Cohort Movie Reviewer Frontend**! This project is
 
 ## About the Project
 
-The **Codex Movie Reviewer** app is designed for the **January 2024 cohort of Code Fellows**. The app allows users to browse, read, and review movies while showcasing the latest movies released during the cohort's learning journey. This project represents the frontend interface of the application and interacts with the backend API to fetch and display movie data, ratings, and reviews.
+The **Codex Movie Reviewer** app is designed for the **January 2024 cohort of Code Fellows**. The app allows users to browse and review movies while showcasing the latest movies released during the cohort's learning journey. This project represents the frontend interface of the application and interacts with the backend API to fetch and display movie data, ratings, and reviews.
 
 ---
 
