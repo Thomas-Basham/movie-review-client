@@ -193,5 +193,3 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 For any questions or suggestions, feel free to reach out to the maintainers.
 
 ---
-
-This `README.md` template includes everything from installation instructions to contributing guidelines and should help both new contributors and users to navigate your project. Let me know if you need any other adjustments!
