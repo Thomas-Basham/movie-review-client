@@ -21,7 +21,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Movie Reviews",
+  title: "Codex Jan2024 Cohort Movie Reviews",
   description: "Reviews on all of Codex's Jan 2024 cohort's favorite movies",
 };
 
@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
                 <Link href="/">
                   <div className="flex items-center text-xl font-bold text-gray-800 hover:text-gray-900">
                     <FilmIcon className="w-8 h-8 mr-2 text-blue-500" />
-                    Movie Reviews
+                    Codex Jan2024 Cohort Movie Reviewer
                   </div>
                 </Link>
               </div>
@@ -58,12 +58,37 @@ export default function RootLayout({ children }) {
                   </div>
                 </Link>
 
-                <Link href="/">
+                {/* Profile link with coming soon message */}
+                <label htmlFor="profileModal" className="cursor-pointer">
                   <div className="flex items-center text-gray-600 hover:text-gray-900">
                     <UserCircleIcon className="w-6 h-6 mr-1" />
                     Profile
                   </div>
-                </Link>
+                </label>
+
+                {/* Hidden checkbox that triggers modal */}
+                <input
+                  type="checkbox"
+                  id="profileModal"
+                  className="hidden peer"
+                />
+
+                {/* Modal triggered by checkbox */}
+                <div className="fixed inset-0 z-50 items-center justify-center hidden w-screen bg-black bg-opacity-50 peer-checked:flex">
+                  <div className="px-6 py-4 text-white bg-purple-900 rounded-lg shadow-lg">
+                    <h2 className="text-lg font-semibold">Coming Soon!</h2>
+                    <p className="mt-2 text-sm">
+                      The profile page is currently under development. Stay
+                      tuned!
+                    </p>
+                    <label
+                      htmlFor="profileModal"
+                      className="block mt-4 text-yellow-400 cursor-pointer hover:underline"
+                    >
+                      Close
+                    </label>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -73,7 +98,7 @@ export default function RootLayout({ children }) {
           <Providers>{children}</Providers>
         </main>
 
-        <footer className="py-6 mt-12 text-center bg-purple-900">
+        <footer className="py-6 text-center bg-purple-900">
           <p className="text-sm text-gray-200">
             © Code Fellows January 2024 Cohort. All rights reserved.
           </p>
