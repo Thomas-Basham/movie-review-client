@@ -37,8 +37,8 @@ export default function RootLayout({ children }) {
               <div className="flex items-center">
                 <Link href="/">
                   <div className="flex items-center text-xl font-bold text-gray-800 hover:text-gray-900">
-                    <FilmIcon className="w-8 h-8 mr-2 text-blue-500" />
-                    Codex Jan2024 Cohort Movie Reviewer
+                    <FilmIcon className="w-8 h-8 mr-2 text-yellow-400" />
+                    <p className="text-purple-900">Codex Jan2024 Cohort Movie Reviewer</p>
                   </div>
                 </Link>
               </div>
